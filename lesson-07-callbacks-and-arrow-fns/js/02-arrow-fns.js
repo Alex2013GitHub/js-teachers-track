@@ -162,26 +162,27 @@ const mango = makeSheff('Mango');
 // console.log(rounder3(3.56655, 2));
 // console.log(rounder2(3.56655, 3));
 
-const salaryManagerFactory = function ( employeeName, baseSalary){
-    let salary = baseSalary;
+// const salaryManagerFactory = function ( employeeName, baseSalary){
+//     let salary = baseSalary;
 
-    const changeBy = function (amount) {
-        salary += amount;
-    };
+//     const changeBy = function (amount) {
+//         salary += amount;
+//     };
 
-    return {
-        raise (amount){
-            changeBy(amount);
-        },
-        lower(amount) {
-            changeBy(amount);
-        },
-        current () {
-            return `Текущая зарплата ${employeeName} - ${salary}`;
-        },
-    };
-};
+//     return {
+//         raise (amount){
+//             changeBy(amount);
+//         },
+//         lower(amount) {
+//             changeBy(amount);
+//         },
+//         current () {
+//             return `Текущая зарплата ${employeeName} - ${salary}`;
+//         },
+//     };
+// };
 
 
 // const salaryManager = salaryManagerFactory('mango', 5000);
 // console.log(salaryManager.current());
+

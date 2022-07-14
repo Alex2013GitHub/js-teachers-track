@@ -5,6 +5,10 @@
  * - Заменяет классический for, если не нужно прерывать цикл
  */
 
+const number = [5, 10, 15, 20, 25];
+
+
+
 const numbers = [5, 10, 15, 20, 25];
 
 numbers.forEach(function (number) {
@@ -12,3 +16,4 @@ numbers.forEach(function (number) {
 });
 
 console.log(numbers);
+
