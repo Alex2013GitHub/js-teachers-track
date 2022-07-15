@@ -9,11 +9,22 @@ const number = [5, 10, 15, 20, 25];
 
 
 
+// const numbers = [5, 10, 15, 20, 25];
+
+// numbers.forEach(function (number) {
+//   console.log('number', number);
+// });
+
+// console.log(numbers);
+
 const numbers = [5, 10, 15, 20, 25];
 
-numbers.forEach(function (number) {
-  console.log('number', number);
+// Классический for
+for (let i = 0; i < numbers.length; i += 1) {
+  console.log(`Индекс ${i}, значение ${numbers[i]}`);
+}
+
+// Перебирающий forEach
+numbers.forEach(function (number, index) {
+  console.log(`Индекс ${index}, значение ${number}`);
 });
-
-console.log(numbers);
-
