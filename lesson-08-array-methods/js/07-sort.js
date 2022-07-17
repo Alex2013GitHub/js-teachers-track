@@ -26,6 +26,7 @@ const letters = ['b', 'B', 'a', 'A'];
 //     return nextEl - curEl;
 // });
 
+// console.log(numbers);
 /*
  * Как сделать копию массива чтобы не сортировать оригинальный
  * - Array.prototype.slice()
@@ -59,16 +60,16 @@ const sortedByWorstPlayers = [...players].sort(
 );
 // console.table(sortedByWorstPlayers);
 
+
 const byName = [...players].sort((a, b) => {
-    const result = a.name[0] > b.name[0];
+    const result =  a.name[0] > b.name[0];
 
-    if (result) {
-        return 1;
+    if(result){
+        return 1
+    }
+    if(!result){
+        return -1
     }
 
-    if (!result) {
-        return -1;
-    }
 });
-
 console.table(byName);

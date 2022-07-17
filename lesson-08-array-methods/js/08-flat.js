@@ -20,8 +20,8 @@ const tweets = [
     { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
 ];
 
-// const tags = tweets.flatMap(t => t.tags);
-// console.log(tags);
+const tags = tweets.flatMap(t => t.tags);
+console.log(tags);
 
 // const stats = tags.reduce((acc, tag) => {
 //     return {
@@ -40,4 +40,4 @@ const stats = tweets
         {},
     );
 
-console.log(stats);
+// console.log(stats);

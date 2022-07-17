@@ -17,14 +17,15 @@ const players = [
   { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
   { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
   { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
-  { id: 'player-5', name: 'Chelsy', timePlayed: 280, points: 48, online: true },
+  { id: 'player-5', name: 'Chelsy', timePlayed: 280, points: 48, online: false },
 ];
 
 /*
  * Получаем массив всех онлайн игроков
  */
 
-const onlinePlayers = players.filter(({ online }) => online);
+const onlinePlayers = players.filter(player => player.online)
+
 // console.table(onlinePlayers);
 
 /*
@@ -39,4 +40,4 @@ const offlinePlayers = players.filter(player => !player.online);
  */
 
 const hardcorePlayers = players.filter(player => player.timePlayed > 250);
-// console.table(hardcorePlayers);
+console.table(hardcorePlayers);
