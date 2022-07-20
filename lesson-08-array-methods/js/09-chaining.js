@@ -13,12 +13,12 @@ const numbers = [1, 5, 2, 4, 3];
 // console.log(sorted);
 
 // Цепочка предыдущих трёх
-const sorted = numbers
-    .filter(num => num > 2)
-    .map(num => num * 3)
-    .sort((a, b) => a - b);
+// const sorted = numbers
+//     .filter(num => num > 2)
+//     .map(num => num * 3)
+//     .sort((a, b) => a - b);
 
-console.log(sorted);
+// console.log(sorted);
 
 /*
  * Сортируем тех кто онлайн по рангу
@@ -34,8 +34,8 @@ const players = [
 ];
 
 const onlineAndSorted = players
-    .filter(player => player.isOnline)
-    .sort((playerA, playerB) => playerA.rank - playerB.rank);
+.filter(player => player.isOnline)
+.sort((playerA, playerB)=>playerA.rank - playerB.rank);
 
 // console.table(onlineAndSorted);
 
