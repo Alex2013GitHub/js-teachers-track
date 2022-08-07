@@ -98,6 +98,7 @@
 //     },
 // };
 
+
 // const invokeAction = function (action) {
 //     console.log(action);
 
@@ -111,26 +112,27 @@
  */
 
 // const fn = function () {
-//     console.log('fn -> this', this);
+//   console.log('fn -> this', this);
 // };
 
-// fn(); // Какой this ???
+// fn();// Какой this ???
+
 
 /*
  * Тренируемся 2
  */
 
 // const book = {
-//     title: 'React for beginners',
-//     showThis() {
-//         console.log('showThis -> this', this);
-//     },
-//     showTitle() {
-//         console.log('showTitle -> this.title', this.title);
-//     },
+//   title: 'React for beginners',
+//   showThis() {
+//     console.log('showThis -> this', this);
+//   },
+//   showTitle() {
+//     console.log('showTitle -> this.title', this.title);
+//   },
 // };
-
 // book.showThis(); // Какой this ???
+
 
 // const outerShowThis = book.showThis;
 // outerShowThis(); // Какой this ???
@@ -160,6 +162,8 @@
 
 //     return sweater.updateColor;
 // };
+
+// makeChangeColor();
 
 // const swapColor = makeChangeColor();
 
@@ -207,5 +211,6 @@ const updateCounter = function (value, operation) {
   operation(value);
 };
 
-updateCounter(10, counter.increment);
-updateCounter(5, counter.decrement);
+// updateCounter(10, counter.increment);
+// updateCounter(5, counter.decrement);
+counter.decrement(15)
