@@ -28,6 +28,7 @@
 // dummyObj.message = 'Это собственное свойство объекта';
 // console.log('dummyObj', dummyObj);
 
+
 // console.log(dummyObj.message);
 
 //  'Это собственное свойство объекта'

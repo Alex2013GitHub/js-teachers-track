@@ -9,48 +9,118 @@
  * 🐷 - геттеры и сеттеры
  */
 
-class Car {
-    static description = 'Класс описывающий автомобиль';
+// class Car {
+//     static description = 'Класс описывающий автомобиль';
 
-    static logInfo(carObj) {
-        console.log('Car.logInfo -> carObj', carObj);
-    }
+//     static logInfo(carObj) {
+//         console.log('Car.logInfo -> carObj', carObj);
+//     }
 
-    constructor({ brand, model, price } = {}) {
-        this.brand = brand;
-        this._model = model;
-        this._price = price;
-    }
+//     constructor({ brand, model, price } = {}) {
+//         this.brand = brand;
+//         this._model = model;
+//         this._price = price;
+//     }
 
-    get price() {
-        return this._price;
-    }
+//     get price() {
+//         return this._price;
+//     }
 
-    set price(newPrice) {
-        this._price = newPrice;
-    }
+//     set price(newPrice) {
+//         this._price = newPrice;
+//     }
 
-    get model() {
-        return this._model;
-    }
+//     get model() {
+//         return this._model;
+//     }
 
-    set model(newModel) {
-        this._model = newModel;
-    }
-}
+//     set model(newModel) {
+//         this._model = newModel;
+//     }
+// }
 
-const carInstance = new Car({
-    brand: 'Audi',
-    model: 'Q3',
-    price: 35000,
-});
+// const carInstance = new Car({
+//     brand: 'Audi',
+//     model: 'Q3',
+//     price: 35000,
+// });
 
-console.log(carInstance.model);
-carInstance.model = 'Q4';
-console.log(carInstance.model);
+// console.log(carInstance.model);
+// carInstance.model = 'Q4';
+// console.log(carInstance.model);
 
-console.log(carInstance.price);
-carInstance.price = 50000;
-console.log(carInstance.price);
+// console.log(carInstance.price);
+// carInstance.price = 50000;
+// console.log(carInstance.price);
 
-console.log(carInstance);
+// console.log(carInstance);
+
+
+
+// ---------
+
+// const Car = function ({brand, model, price} = {}) {
+//     // console.log(this);
+
+//     // const {brand, model, price} = config;
+
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+
+// };
+
+// Car.prototype.sayHi = function () {
+//     console.log('Car.prototype.sayHi -> this', this);
+//     console.log('Hello : ) ')
+// }
+
+// Car.prototype.changePrice = function (newPrice) {
+//     this.price = newPrice;
+// }
+
+// console.log(Car.prototype);
+
+// const myCar = new Car({
+//     brand: 'Audi',
+//     model: 'Q3',
+//     price: 35000,
+// });
+// console.log(myCar);
+
+// myCar.sayHi();
+// myCar.changePrice(10000);
+
+// const myCar2 = new Car({brand: 'BMW',
+// model: 'X6',
+// price: 50000,});
+// console.log(myCar2);
+
+// myCar2.sayHi()
+
+// const myCar3 = new Car({
+//     brand: 'Audi',
+//     model: 'A6',
+//     price: 60000,
+// });
+// console.log(myCar3);
+
+// const User = function ({email, passwod} = {}) {
+//     this.email = email;
+//     this.passwod = passwod;
+// };
+
+// User.prototype.changeEmail = function (newMail) {
+//     this.email = newMail;
+// };
+
+// const mango = new User ({ email: 'mango@mail.com', passwod: 111111 });
+
+// mango.changeEmail('my-new-mail@mail.com')
+// console.log(mango);
+
+// const objA = {
+//     x: 5,
+// };
+
+// console.log(objA.__proto__ === Object.prototype);
