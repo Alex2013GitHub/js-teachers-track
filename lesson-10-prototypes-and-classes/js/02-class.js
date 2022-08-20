@@ -124,3 +124,36 @@
 // };
 
 // console.log(objA.__proto__ === Object.prototype);
+
+class Car1 {
+    static description = 'Класс описывающий втомобиль'
+
+
+    constructor ({brand, model, price} = {}) {
+        console.log('Выполняется конструктор');
+
+        this.brand = brand;
+        this.model = model;
+        this.price = price;
+    }
+    changaPrice(newPrice) {
+        this.price = newPrice;
+    }
+
+    updateModel(newModel) {
+        this.model = newModel;
+    }
+}
+
+console.dir(Car1);
+console.log(Car1.description)
+
+const carInstance = new Car1({
+    brand: 'Audi',
+    model: 'A6',
+    price: 60000,
+});
+
+console.log(Object.getPrototypeOf(carInstance)===Car1.prototype);
+
+console.log(carInstance);
