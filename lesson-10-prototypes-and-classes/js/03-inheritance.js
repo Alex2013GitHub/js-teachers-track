@@ -4,77 +4,76 @@
  *  - super()
  */
 
+// class Hero {
+//     constructor ( { name = 'hero', xp = 0} = {}) {
+//         this.name = name;
+//         this.xp =  xp;
+//     }
 
-class Hero {
-    constructor ( { name = 'hero', xp = 0} = {}) {
-        this.name = name;
-        this.xp =  xp;
-    }
-
-    gainXp (amount){
-        console.log( `${this.name} получает ${amount}опыта`);
-        this.xp += amount;
-    }
-}
+//     gainXp (amount){
+//         console.log( `${this.name} получает ${amount}опыта`);
+//         this.xp += amount;
+//     }
+// }
 
 // const mango = new Hero ({name: 'mango', xp: 1000 });
 
 // console.log(mango);
 
-class Warrior extends Hero {
-    constructor ({weapon, ...restProps} = {}) {
-        super(restProps);
+// class Warrior extends Hero {
+//     constructor ({weapon, ...restProps} = {}) {
+//         super(restProps);
 
-        this.weapon = weapon;
-    } 
-    
-    attack(){
-        console.log(`${this.name} атакует используя ${this.weapon}`)
-    }
-}
+//         this.weapon = weapon;
+//     }
 
-class Berserk extends Warrior {
-    constructor ({ warcry, ...restProps } = {}){
-        super(restProps);
+//     attack(){
+//         console.log(`${this.name} атакует используя ${this.weapon}`)
+//     }
+// }
 
-        this.warcry = warcry;
-    }
-    babyRage(){
-        console.log(this.warcry);
-    }
-}
+// class Berserk extends Warrior {
+//     constructor ({ warcry, ...restProps } = {}){
+//         super(restProps);
 
-const ajax = new Berserk({
-    name: 'ajax',
-    xp: 500,
-    weapon: 'axe',
-    warcry: 'waaaaah'
-});
+//         this.warcry = warcry;
+//     }
+//     babyRage(){
+//         console.log(this.warcry);
+//     }
+// }
 
-console.log(ajax);
-ajax.babyRage();
-ajax.attack();
-ajax.gainXp();
+// const ajax = new Berserk({
+//     name: 'ajax',
+//     xp: 500,
+//     weapon: 'axe',
+//     warcry: 'waaaaah'
+// });
 
-class Mage extends Hero {
-    constructor ({ spells, ...restProps} = {}){
-        super(restProps);
+// console.log(ajax);
+// ajax.babyRage();
+// ajax.attack();
+// ajax.gainXp();
 
-        this.spells = spells;
-    }
-    cast() {
-        console.log(`${this.name} что-то там кастует`);
-    }
-}
+// class Mage extends Hero {
+//     constructor ({ spells, ...restProps} = {}){
+//         super(restProps);
 
-const mango = new Warrior ({name: 'mango', xp: 1000, weapon: 'альбарда'});
-console.log(mango);
+//         this.spells = spells;
+//     }
+//     cast() {
+//         console.log(`${this.name} что-то там кастует`);
+//     }
+// }
 
-mango.attack();
-mango.gainXp(1000);
+// const mango = new Warrior ({name: 'mango', xp: 1000, weapon: 'альбарда'});
+// console.log(mango);
 
-const poly = new Mage({ name: 'poly', xp: 500, spells: ['фаербол']});
-console.log(poly)
+// mango.attack();
+// mango.gainXp(1000);
+
+// const poly = new Mage({ name: 'poly', xp: 500, spells: ['фаербол']});
+// console.log(poly)
 
 // console.log('Warrior.prototype', Warrior.prototype);
 // console.log('Hero.prototype', Hero.prototype);
@@ -85,3 +84,4 @@ console.log(poly)
 // console.log(mango.__proto__===Warrior.prototype);
 // console.log('Warrior.prototype', Warrior.prototype);
 // console.log(Warrior.prototype.__proto__=== Hero.prototype);
+
