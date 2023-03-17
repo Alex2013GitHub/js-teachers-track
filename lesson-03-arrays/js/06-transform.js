@@ -20,3 +20,4 @@ const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
 const string = friends.join(', ')
 
 console.log(string);
+console.log(friends)

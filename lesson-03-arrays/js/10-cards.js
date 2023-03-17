@@ -17,7 +17,7 @@ const cards = [
 console.table(cards);
 
 /*
- * Удаление (по индексу), метод indexOf()
+ * Удаление (по индексу), метод indexOf() 
  */
 
 // const cardToRemove = 'Карточка-3';

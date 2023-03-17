@@ -9,7 +9,7 @@ let smallestNumber = numbers[0];
 
 for (const number of numbers) {
 
-  if(number<smallestNumber){
+  if(number>smallestNumber){
     smallestNumber=number;
   }
 }
