@@ -6,15 +6,15 @@
  * - Обновить
  */
 
-const cards = [
-  'Карточка-1',
-  'Карточка-2',
-  'Карточка-3',
-  'Карточка-4',
-  'Карточка-5',
-];
+// const cards = [
+//   'Карточка-1',
+//   'Карточка-2',
+//   'Карточка-3',
+//   'Карточка-4',
+//   'Карточка-5',
+// ];
 
-console.table(cards);
+// console.table(cards);
 
 /*
  * Удаление (по индексу), метод indexOf() 
@@ -40,11 +40,26 @@ console.table(cards);
 /*
  * Обновление (по индексу)
  */
-const cardToUpdate = 'Карточка-4';
-const index = cards.indexOf(cardToUpdate);
 
-console.log(index);
+// const array= ['Карточка-1',
+//   'Карточка-2',
+//   'Карточка-3',
+//   'Карточка-4',
+//   'Карточка-5',]
 
-cards.splice(index, 1, 'Обновленная карточка-4');
+function getExtremeElements(array) {
+  // Change code below this line
+  const arrayTotal = [];
 
-console.table(cards);
+  arrayTotal.puch(array[0]);
+  arrayTotal.puch(array[array.length - 1])
+
+  return arrayTotal
+
+  // Change code above this line
+}
+
+console.log(getExtremeElements([3, 8, 12, -2, 15])); // -2
+console.log(getExtremeElements([100, 54, 8, 12, 47])); // 8
+console.log(getExtremeElements([7, 21, 2, 84, 15, 4])); // 4
+
