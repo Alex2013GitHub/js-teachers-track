@@ -35,14 +35,12 @@ heroTitleEl.textContent = 'Я сладкий пирожочек!';
 
 
 
-const actions = document.querySelectorAll('.js-actions button');
-console.log(actions[0].dataset.action);
-console.log(actions[2].dataset.action);
+const actions = document.querySelectorAll('.js-actions button')
 console.log(actions);
+console.log(actions[2].dataset.action);
 
-
-// magicBtn.addEventListener('click', ()=>{
-//   const inputEl = document.querySelector('.js-input');
-//   console.log(inputEl.value);
-//   inputEl.value = 'sjdsffjld'
-// });
+magicBtn.addEventListener('click', ()=>{
+  const inputEl = document.querySelector('.js-input');
+  console.log(inputEl.value);
+  inputEl.value = 'sjdsffjld'
+});
