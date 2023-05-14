@@ -33,7 +33,7 @@ function onKeypress(event){
   console.log('event.key: ', event.key);
   console.log('event.code: ', event.code);
 
-  refs.output.textContent += event.key;
+  // refs.output.textContent += event.key;
 
 }
 

@@ -11,6 +11,7 @@ form.addEventListener("submit", onFormSubmit);
 
 function onFormSubmit(event) {
   event.preventDefault();
+  
   console.log(form.elements);
 
   const formData = new FormData(form);
@@ -19,5 +20,6 @@ function onFormSubmit(event) {
   formData.forEach((value, name) => {
     console.log("onFormSubmit -> name", name);
     console.log("onFormSubmit -> value", value);
+
   });
 }
