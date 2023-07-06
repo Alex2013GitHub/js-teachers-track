@@ -21,3 +21,5 @@ const logger = time => console.log(`Лог каждые ${time}ms - ${Date.now()
 // if (shouldCancelInterval) {
 //   clearInterval(intervalId);
 // }
+
+// =======
