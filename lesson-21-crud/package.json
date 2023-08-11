@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/",
+    "build": "parcel build src/*.html --public-url /js-teachers-track/",
     "server": "json-server --watch db.json -p 4040 -d 300"
   },
   "repository": {
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/luxplanjay/js-22/issues"
   },
-  "homepage": "https://github.com/luxplanjay/js-22#readme",
+  "homepage": "https://github.com/Alex2013GitHub/js-teachers-track",
   "devDependencies": {
     "json-server": "^0.16.2",
     "parcel-bundler": "^1.12.5",
