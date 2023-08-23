@@ -11,7 +11,7 @@ function getFruit(name) {
   };
 
   return new Promise((resolve, reject) =>
-    setTimeout(() => resolve(fruits[name]), 500),
+    setTimeout(() => resolve(fruits[name]), 500)
   );
 }
 
